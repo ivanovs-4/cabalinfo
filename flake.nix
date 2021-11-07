@@ -1,6 +1,5 @@
 {
   description = "cabalinfo";
-  nixConfig.bash-prompt = ''[nix-develop]$ '';
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs";

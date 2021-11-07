@@ -3,11 +3,11 @@ name:               cabalinfo
 version:            0.1.0.0
 synopsis:
 
--- description:
-homepage:
+description: Program to show some info about cabal package or project
+homepage: https://github.com/ivanovs-4/cabalinfo
 
 -- bug-reports:
-license:            NONE
+license:            BSD-2-Clause
 author:             Sergey Ivanov
 maintainer:         ivanovs-4@yandex.ru
 
@@ -24,6 +24,7 @@ common common-deps
 
     default-extensions:
 
+        ApplicativeDo
         ConstraintKinds
         DataKinds
         DeriveFunctor
@@ -57,6 +58,14 @@ common common-deps
       , safe
       , text
       , unix
+
+      , optparse-applicative
+      , filepath
+      , directory
+      , Cabal
+      , cabal-install-parsers
+      , lens
+      , generic-lens
 
 library
     import: common-deps
