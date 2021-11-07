@@ -1,5 +1,5 @@
 cabal-version:      2.4
-name:               {appname}
+name:               cabalinfo
 version:            0.1.0.0
 synopsis:
 
@@ -62,28 +62,28 @@ library
     import: common-deps
     hs-source-dirs:   src
     exposed-modules:
-        {Appname}
-        {Appname}.Helpers.SignalHandlers
-        {Appname}.CustomPrelude
+        Cabalinfo
+        Cabalinfo.Helpers.SignalHandlers
+        Cabalinfo.CustomPrelude
     other-modules:
         Prelude
 
-executable {appname}
+executable cabalinfo
     import: common-deps
     hs-source-dirs:   app
     main-is:          Main.hs
     build-depends:
-        {appname}
+        cabalinfo
 
-test-suite {appname}-test
+test-suite cabalinfo-test
     import: common-deps
     type:             exitcode-stdio-1.0
     hs-source-dirs:   test
-    main-is:          {Appname}Test.hs
+    main-is:          CabalinfoTest.hs
     other-modules:
         Prelude
     build-depends:
-        {appname}
+        cabalinfo
     ghc-options:
         -threaded
         -rtsopts

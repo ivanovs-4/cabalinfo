@@ -1,5 +1,5 @@
 module Prelude
-  ( module {Appname}.CustomPrelude
+  ( module Cabalinfo.CustomPrelude
   ) where
 
-import {Appname}.CustomPrelude
+import Cabalinfo.CustomPrelude

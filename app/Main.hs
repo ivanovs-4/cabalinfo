@@ -1,9 +1,9 @@
 {-# LANGUAGE NoImplicitPrelude #-}
 module Main where
 
-import {Appname}.CustomPrelude
-import {Appname} ({appname}Main)
+import Cabalinfo.CustomPrelude
+import Cabalinfo (cabalinfoMain)
 
 main :: IO ()
 main = do
-  {appname}Main
+  cabalinfoMain

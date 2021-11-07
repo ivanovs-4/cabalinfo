@@ -1,8 +1,8 @@
 {-# language NoImplicitPrelude #-}
 
-module {Appname}.CustomPrelude
+module Cabalinfo.CustomPrelude
   ( module X
-  , module {Appname}.CustomPrelude
+  , module Cabalinfo.CustomPrelude
   ) where
 
 import BasePrelude as X

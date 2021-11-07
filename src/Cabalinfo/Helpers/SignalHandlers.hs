@@ -1,4 +1,4 @@
-module {Appname}.Helpers.SignalHandlers where
+module Cabalinfo.Helpers.SignalHandlers where
 
 import Control.Concurrent (mkWeakThreadId, myThreadId)
 import Control.Exception (Exception(..), throwTo)
